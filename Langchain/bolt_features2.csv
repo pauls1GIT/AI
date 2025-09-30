@@ -1,0 +1,2 @@
+title,part_number,diameter_mm,length_mm,thread_pitch_mm,head_type,drive_type,material,coating,is_threaded_full
+Hex Bolt,HB-1234,10,50,1.5,hex,allen,steel,zinc,True
