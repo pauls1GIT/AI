@@ -1,8 +1,8 @@
-**Bolt Attribute Extractor**
+# **Bolt Attribute Extractor**
 
-Bolt Attribute Extractor is a desktop tool that uses AI (OpenAI GPT-4o and Tavily search) to automatically identify key attributes — such as diameter, head type, and length — from images or technical drawings of bolts.
+ Bolt Attribute Extractor is a desktop tool that uses AI tools (OpenAI GPT-4o and Tavily search) to automatically identify key attributes — such as diameter, head type, and length — from images or technical drawings of bolts.
 
-What it does:
+## What it does:
 
 1. Prepares context
 Tavily searches the web for relevant reference information (e.g., “how to read technical drawings for bolts”).
@@ -19,7 +19,10 @@ What is the length?
 3. Structured output
 The AI returns structured answers in an AnswerBlock format:
 
-AnswerBlock(answer="M10", confidence=0.92, reasoning="Label near head section shows Ø10mm")
+<pre> class AnswerBlock(BaseModel):
+    answer: str
+    confidence: float
+    reasoning: str  </pre>
 
 4. Display & export
 The GUI displays results in a table.
